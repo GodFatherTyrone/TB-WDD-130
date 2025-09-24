@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/liquid-marbling-wallpaper.jpg");
+}
+header img{
+  width: 178px;
+  float: left ;
+  
+}
+
+
+#wrapper {
+  width: 900px;
+  height:1000px;
+  margin: auto;
+  color: navy;
+  background: rgb(244, 253, 228);
+}
+
+nav{
+  height: 50px;
+  width: 900px;
+  background: pink;
+  clear: both;
+}
+
+main{
+  background: rgb(69, 172, 129);
+  height: 800px;
+}
+
+footer{
+  background: rgb(255, 78, 108);
+  height: 100px;
+}
+nav a{
+  color: rgb(50, 120, 199);
+  font-size: 1.5em;
+  text-decoration: none;
+  width: 225px;
+}
+/*!
+ * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ <img src="images/liquid-marbling-wallpaper.jpg">
+ */
+ 
+
+  
