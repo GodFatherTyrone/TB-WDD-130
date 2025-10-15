@@ -1,0 +1,70 @@
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.content {/*This is the code for the font, I got from google fonts*/
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;*/
+}
+
+
+/* Playing with the settings
+body {
+    background-color: #E8CF7A;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+*/
+
+/*<nav>*/
+
+/*</nav>*/
+
+/*<toprow>*/
+
+/*</toprow>*/
+
+/*<fav_projects>*/
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.fav_proj_box {
+    width: 100%;
+    border: 10px black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.fav_proj_box:hover{
+    opacity: .6;
+    scale: (1.1);
+}
+#fav_proj_box1{
+    margin: 200px 0;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+#fav_proj_box2{
+    margin: 200px 0;
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+#fav_proj_box3{
+    margin: 200px 0;
+    grid-column: 8/ 10;
+    grid-row: 2 / 3;
+}
+/*</fav_projects>*/
