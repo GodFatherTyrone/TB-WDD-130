@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        main{
+            grid-column: 1 / 2;
+            
+            height: 1000px;
+            width: 1200px;
+            
+            background-image: url("images/christus.webp");
+            margin: auto;
+            border: 3px solid #E8ECED;
+            border-radius: 20px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .head{
+            flex-wrap: wrap;
+        }
+        #godhead{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            
+        }
+
+        #twelve{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            
+        }
+        .spotlight{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .spotlight img{
+            width: 200px;
+            
+        }
+        #oak{
+            grid-column: 2 / 3;
+        }
+        #nelson{
+            grid-column: 3 / 4;
+        }
+        #eyring{
+            grid-column: 4 / 5;
+        }
+        #hollond{
+            grid-column: 0 / 1;
+        }
+        #uchtorf{
+            grid-column: 1 / 2;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="title">First Presidency</h1>           
+            <div id="godhead" class="head">
+                <div id="oak" class="spotlight"><img src="images/oaks.webp" alt="Elder Oak"></div>
+                <div id="nelson" class="spotlight"><img src="images/nelson.webp" alt="Elder Nelson"></div>
+                <div id="eyring" class="spotlight"><img src="images/eyring.webp" alt="Elder Eyring"></div>
+                
+            </div>
+            <h3>Quorum of the Twelve Apostles</h3>
+        </section>
+        <section>
+            <div id="twelve" class="head">
+                <div class="spotlight"><img id="holland"src="images/holland.webp" alt="Elder Holland"></div>
+                <div class="spotlight"><img id="uchtdorf"src="images/uchtdorf.webp" alt="Elder Uchtdorf"></div>
+                <div class="spotlight"><img id="bednar"src="images/bednar.webp" alt="Elder Bednar"></div>
+                <div class="spotlight"><img id="cook"src="images/cook.webp" alt="Elder Cook"></div>
+                <div class="spotlight"><img id="chris"src="images/christofferson.webp" alt="Elder Christofferson"></div>
+                <div class="spotlight"><img id="ander"src="images/andersen.webp" alt="Elder Andersen"></div>
+                <div class="spotlight"><img id="rasban"src="images/rasban.webp" alt="Elder Rasban"></div>
+                <div class="spotlight"><img id="renlund"src="images/renlund.webp" alt="Elder Renlund"></div>
+                <div class="spotlight"><img id="gong"src="images/gong.webp" alt="Elder Gong"></div>
+                <div class="spotlight"><img id="soares"src="images/soares.webp" alt="Elder Soares"></div>
+                <div class="spotlight"><img id="kearon"src="images/kearon.webp" alt="Elder Kearon"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

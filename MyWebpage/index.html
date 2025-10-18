@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="stylez.css">
     <title>Ty Budvarson | Data Science Major | BYUI</title>
 </head>
-<Body>
-<div class="content">
+<Body class="content">
     <header>
         <!--| |-->
         <!--| Example
@@ -22,8 +21,8 @@
         <div>
             <a id="title">Ty Budvarson | Data Science Major | BYUI</a>
         </div>
-        <nav> <!--| When scroll down, I want the nav to shoeten and a HambUrger to apere on the right side. When clicked, the nav bar pops open like normal whereever you are |-->
-            <a href="index.html">Home</a>
+        <nav class="navbar"> <!--| When scroll down, I want the nav to shoeten and a HambUrger to apere on the right side. When clicked, the nav bar pops open like normal whereever you are |-->
+            <a class="active" href="index.html">Home</a>
             <a href="sellableskills.html">Skills</a>
             <!--| Maybe when the user hovers, Display skills, when click on specific skill auto scroll to place that talks about it.|-->
             <a href="experience.html">Experience</a>
@@ -31,45 +30,56 @@
             <a href="socials.html">Socials</a>
             <!--| Same as skills |-->
         </nav>
+        <div class="menu_icon">
+            <div class="menu_icon_lines"></div>
+            <div class="menu_icon_lines"></div>
+            <div class="menu_icon_lines"></div>
+        </div>
     </header>
-    <section id="toprow">
-        <p id="Introduction">
-            ##@@ This is where I talk about myself @@##
-        </p>
-        <div id="contact-box">
-            <img src="##@@ images/email.png @@##" alt="This is supposed to be a picture of gmail. Please ignore this message.">
-            <a href="contactus.html">contact me</a>
-        </div>
-        <a id="portrait" ><!--| id: # One |Class: . Multiple |-->
-            <img src="##@@ images/MYFACE.png @@##" alt="This is supposed to be a picture of me. Please ignore this message.">
-        </a>
-    </section>
-    <main id="fav_projects">
-        <div id="fav_proj_box1" class="fav_proj_box">
-            <p class="fav_proj_summary">
-                ##@@ This is where I talk about the first project i want to show @@##
-            </p>
-            <a class="fav_proj_img">
-                <img src="##@@ images/pro1.png @@##" alt="This is supposed to be a picture of my first project. Please ignore this message.">
-            </a>
-        </div>
-        <div id="fav_proj_box2" class="fav_proj_box">
-            <p class="fav_proj_summary">
-                ##@@ This is where I talk about the second project i want to show @@##
-            </p>
-            <a class="fav_proj_img">
-                <img src="##@@ images/pro2.png @@##" alt="This is supposed to be a picture of my second project. Please ignore this message.">
-            </a>
-        </div>
-        <div id="fav_proj_box3" class="fav_proj_box">
-            <p class="fav_proj_summary">
-                ##@@ This is where I talk about the third project i want to show @@##
-            </p>
-            <a class="fav_proj_img">
-                <img src="##@@ images/pro3.png @@##" alt="This is supposed to be a picture of my third project. Please ignore this message.">
-            </a>
-        </div>
-    </main><!--| End of main, id="fav_projects" |-->
+    <main>
+        <section class= "ribbon_dark">
+            <div id="toprow">
+                <p id="Introduction">
+                    ##@@ This is where I talk about myself @@##
+                </p>
+                <div id="contact-box">
+                    <img src="##@@ images/email.png @@##" alt="This is supposed to be a picture of gmail. Please ignore this message.">
+                    <a href="contactus.html">contact me</a>
+                </div>
+                <a id="portrait" ><!--| id: # One |Class: . Multiple |-->
+                    <img src="##@@ images/MYFACE.png @@##" alt="This is supposed to be a picture of me. Please ignore this message.">
+                </a>
+            </div>
+        </section>
+        <section class= "ribbon_light">
+            <div id="fav_projects">
+                <div id="fav_proj_box1" class="fav_proj_box">
+                    <p class="fav_proj_summary">
+                        ##@@ This is where I talk about the first project i want to show @@##
+                    </p>
+                    <a class="fav_proj_img">
+                        <img src="##@@ images/pro1.png @@##" alt="This is supposed to be a picture of my first project. Please ignore this message.">
+                    </a>
+                </div>
+                <div id="fav_proj_box2" class="fav_proj_box">
+                    <p class="fav_proj_summary">
+                        ##@@ This is where I talk about the second project i want to show @@##
+                    </p>
+                    <a class="fav_proj_img">
+                        <img src="##@@ images/pro2.png @@##" alt="This is supposed to be a picture of my second project. Please ignore this message.">
+                    </a>
+                </div>
+                <div id="fav_proj_box3" class="fav_proj_box">
+                    <p class="fav_proj_summary">
+                        ##@@ This is where I talk about the third project i want to show @@##
+                    </p>
+                    <a class="fav_proj_img">
+                        <img src="##@@ images/pro3.png @@##" alt="This is supposed to be a picture of my third project. Please ignore this message.">
+                    </a>
+                </div><!--| End of div, id="fav_projects" |-->
+            </div><!--| End of section, id="fav_projects" |-->
+        </section>
+    </main>
     <footer>
         <p>Portfolio &copy; 2025 - Ty Budvarson</p>
         <div class="socials">
@@ -85,6 +95,5 @@
             </a>
         </div>
     </footer>
-</div>
 </Body>
 </html>

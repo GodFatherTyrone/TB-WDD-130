@@ -1,6 +1,23 @@
+:root{
+    /*COLORS*/
+  --C1-white: #D5EAFF;
+  --C2: #B9D6F2;
+  --C3: #76AFF9;
+  --C4: #468DF1;
+  --C5: #0258AF;
+  --C6: #003F96;
+  --C7: #001C59;
+  --C8: #061A40;
+  --C9: #010813;
+  --c10-grey: #546786;
+}
+
+
+* {box-sizing: border-box}
 .content {
     max-width: 1600px;
     margin: 0 auto;
+    background-color: pink;
 }
 .content {/*This is the code for the font, I got from google fonts*/
   font-family: "Open Sans", sans-serif;
@@ -30,41 +47,57 @@ div {
 */
 
 /*<nav>*/
-
+.navbar {
+  width: 100%;
+  background-color: var(--c10-grey);
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: var(--C1-white);
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: var(--c9-black);
+}
+.navbar a.active {
+  background-color: var(--C5);
+}
 /*</nav>*/
-
-/*<toprow>*/
-
-/*</toprow>*/
-
-/*<fav_projects>*/
-main {
+/*<main>*/
+.ribbon_light .ribbon_dark { /*this should select each ribbon*/
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
-.fav_proj_box {
+/*<toprow>*/
+/*</toprow>*/
+/*<fav_projects>*/
+.fav_proj_box { /*this selects all 3 fav boxes indivitually*/
     width: 100%;
     border: 10px black;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px var(--c10-grey);
+    margin: 200px 0;
 }
 .fav_proj_box:hover{
     opacity: .6;
     scale: (1.1);
 }
-#fav_proj_box1{
-    margin: 200px 0;
+#fav_proj_box1{ /*Location of Box1*/
     grid-column: 2 / 4;
     grid-row: 2 / 3;
 }
-#fav_proj_box2{
-    margin: 200px 0;
+#fav_proj_box2{ /*Location of Box2*/
     grid-column: 5 / 7;
     grid-row: 2 / 3;
 }
-#fav_proj_box3{
-    margin: 200px 0;
+#fav_proj_box3{ /*Location of Box3*/
     grid-column: 8/ 10;
     grid-row: 2 / 3;
 }
 /*</fav_projects>*/
+/*</main>*/
