@@ -21,7 +21,7 @@
         <div class="title_box">
             <a class="title">Ty Budvarson | Data Science Major | BYUI</a>
         </div>
-        <nav class="navbar"> <!--| When scroll down, I want the nav to shoeten and a HambUrger to apere on the right side. When clicked, the nav bar pops open like normal whereever you are |-->
+        <nav class="navbar"> 
             <a class="active" href="index.html">Home</a>
             <a href="sellableskills.html">Skills</a>
             <!--| Maybe when the user hovers, Display skills, when click on specific skill auto scroll to place that talks about it.|-->
@@ -30,28 +30,36 @@
             <a href="socials.html">Socials</a>
             <!--| Same as skills |-->
         </nav>
-        <div class="menu_icon">
-            <div class="menu_icon_lines"></div>
-            <div class="menu_icon_lines"></div>
-            <div class="menu_icon_lines"></div>
+        <div class="icon_box">
+            <div class="icon">
+                <a href="https://github.com" target="_blank">
+                    <img src="images/icon/github_icon.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/icon/linkedin_icon.png" alt="LinkedIn icon">
+                </a>
+                <a href="https://email.com" target="_blank">
+                    <img src="images/icon/email_icon.png" alt="email icon">
+                </a>
+            </div>
         </div>
     </header>
     <main>
-        <section class= "ribbon_dark">
+        <section class="ribbon">
             <div id="toprow">
-                <p id="Introduction">
-                    ##@@ This is where I talk about myself @@##
-                </p>
-                <div id="contact-box">
-                    <img src="##@@ images/email.png @@##" alt="This is supposed to be a picture of gmail. Please ignore this message.">
-                    <a href="contactus.html">contact me</a>
+                <div id="introduction_box">
+                    <p id="introduction">
+                        ##@@ My name is Ty Budvarson I am a Data Sience tudent. I Have expirense in RStudio and MySQL. I also have limited experience in Python, C#, HTML, and CSS. @@##
+                    </p>
                 </div>
-                <a id="portrait" ><!--| id: # One |Class: . Multiple |-->
-                    <img src="##@@ images/MYFACE.png @@##" alt="This is supposed to be a picture of me. Please ignore this message.">
-                </a>
+                <div id="portrait_box">
+                    <a id="portrait" ><!--| id: # One |Class: . Multiple |-->
+                        <!--<img src="##@@ images/MYFACE.png @@##" alt="This is supposed to be a picture of me. Please ignore this message.">-->
+                    </a>
+                </div>
             </div>
         </section>
-        <section class= "ribbon_light">
+        <section class="ribbon">
             <div id="fav_projects">
                 <div id="fav_proj_box1" class="fav_proj_box">
                     <p class="fav_proj_summary">
@@ -82,18 +90,6 @@
     </main>
     <footer>
         <p>Portfolio &copy; 2025 - Ty Budvarson</p>
-        <div class="socials">
-            <!--| I need to put links to my accounts |-->
-            <a href="https://github.com" target="_blank">
-                <img src="images/github.png" alt="GitHub icon">
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn icon">
-            </a>
-            <a href="https://email.com" target="_blank">
-                <img src="images/email.png" alt="email icon">
-            </a>
-        </div>
     </footer>
 </Body>
 </html>
