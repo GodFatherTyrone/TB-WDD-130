@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="login-box">
+        <h2>Please login to BYUI Devotionals</h2>
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div id="img"class="header-image">
+                <h1>My Favorite<br>Devotionals</h1>
+              </div>
+              </div>
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+      </div>
+      <div class="content-box">
+        <table class="steelBlueCols">
+          <thead>
+            <tr> <!--| Columns |-->
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Josh Figueira</td><!--| Speaker|-->
+            <td>Workmen of All Kinds</td><!--| Title |-->
+            <td>BYUI</td><!--| Location |-->
+            <td>January 21, 2025</td><!--| Year |-->
+          </tr>
+          <tr>
+            <td>Sam Merrick</td>
+            <td>Finding Purpose and Having Courage</td>
+            <td>BYUI</td>
+            <td>January 24, 2023</td>
+          </tr>
+          <tr>
+            <td>Jeremy Hall</td>
+            <td>We Are Creators and Builders</td>
+            <td>BYUI</td>
+            <td>April 2, 2024</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </main>
+  </div>
+</body>
+</html>
