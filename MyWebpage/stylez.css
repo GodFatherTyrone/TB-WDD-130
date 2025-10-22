@@ -15,9 +15,9 @@
 
 * {box-sizing: border-box}
 .content {
-    max-width: 100%;;
-    margin: 0 auto;
-    background-color: var(--c1-white);
+  max-width: 100%;;
+  margin: 0 auto;
+  background-color: var(--c1-white);
 }
 .content {/*This is the code for the font, I got from google fonts*/
   font-family: "Open Sans", sans-serif;
@@ -78,13 +78,14 @@ header{
   width: 25%; /* Four links of equal widths */
   text-align: center;
 }
+.navbar a.active {
+  background-color: var(--c3);
+}
 .navbar a:hover {
-  /*background-color: var(--c8);*/
+  background-color: var(--c5);
   color: var(--c3);
 }
-.navbar a.active {
-  background-color: var(--c5);
-}
+
 /*</nav>*/
 /*</icon>*/
 .icon_box{
@@ -94,21 +95,18 @@ header{
 .icon{
   width: 100%;
   display: flex;
-  
-  
 }
 .icon a{
-  border: 4px solid #fff;
+  /*border: 4px solid #fff;*/
+  width: 50%;
   overflow: hidden;
   border-radius: 50%;
-  width: 33%;
   display: flex;
   justify-content: center;
   
 }
 .icon a img{
-  width: 100%;
-  
+  width: 50%;
 }
 /*</icon>*/
 /*If screen width is less than 800px, changes these styles*/
@@ -122,6 +120,13 @@ header{
     display: block;
     width: 100%;
     text-align: left;
+  }
+  .navbar a:hover {
+    background-color: var(--c5);
+    color: var(--c3);
+  }
+  .navbar a.active {
+    background-color: var(--c3);
   }
   /*</nav>*/
 }
