@@ -9,14 +9,89 @@
     <style>
         * {
             margin: 0;
+            
         }
 
         body {
             background: rgb(120, 96, 64);
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            padding: 25px;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 14px;
         }
-        #formContainer{
-            width: 300px;
+        #formContainer{ /*whole container*/
+            width: 400px;
+            
+            background-color: white;
+            text-align: center;
+            border: 6px solid #007bff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
         }
+        #jesusfeeds{
+            height: 175px;
+            display: flex;
+            background-color: #f0f0f0;
+        }
+        #jesusfeeds img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        #hoverletters{
+            position: absolute;
+            transform: translateY(-100px) translateX(-100px);
+            text-shadow: 2px 2px 4px #000000;
+            
+        }#hoverletters p{
+            font-size: 30px;
+            color: white;
+        }
+        #closeBtn{
+            position: absolute;
+            transform: translateY(-165px) translateX(-190px);
+        }
+        h3{
+            margin: 15px;
+        }
+        #first_myForm{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            
+        }
+        .label_group, .input_group{
+            margin: 8px;
+        }
+        .label_group{
+            justify-self: start;
+            grid-column: 1 / 2;
+            margin-left: 15px;
+        }
+        .input_group{
+            grid-column: 2 / 3;
+            margin-right: 15px;
+        }
+        .oof{
+            margin: 10px;
+        }
+        #book_box{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            
+        }
+        #book_box img{
+            display: flex;
+            justify-self: center;
+            transform: scale(1.6) translateY(20px);
+        }
+        
     </style>
 
 
@@ -26,40 +101,60 @@
 
 <body>
     <div id="formContainer">
+        <a id="jesusfeeds">
+            <img src="images/jesus_feeds_5000.jpeg">
+            <a id="hoverletters">
+                <p>Daily Feed</p>
+                <p>Scripture a Day</p>
+            </a>
+            <button type="button" id="closeBtn">X</button>
+        </a>
         <h3>Sign Up for Daily Scripture Feed</h3>
         <form id="myForm">
-            <button type="button" id="closeBtn">X</button>
-            <label for="username">User Name:</label>
-            <input type="text" id="username" name="username" required>
+            
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label>Gender:</label>
-            <div>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">Female</label>
-            </div>
-
-            <section>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Subscribe to newsletter</label>
+            <section id="first_myForm">
+                <label class="label_group" for="username">User Name:</label>
+                <input class="input_group" type="text" id="username" name="username" required>
+            
+                <label class="label_group" for="password">Password:</label>
+                <input class="input_group" type="password" id="password" name="password" required>
+            
+                <label class="label_group" for="email">Email:</label>
+                <input class="input_group" type="email" id="email" name="email" required>
+            
+                <label class="label_group" >Gender:</label>
+                <div class="input_group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
             </section>
 
             <section>
-                <input type="checkbox" id="conditions" name="conditions" required>
-                <label for="conditions">I acknowledge the terms and conditions</label>
-            </section>
+                <section class="oof">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to newsletter</label>
+                </section>
 
-            <section>
-                <button type="submit">Submit</button>
+                <section  class="oof">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">I acknowledge the terms and conditions</label>
+                </section>
+
+                <section class="oof">
+                    <button type="submit">Submit</button>
+                </section>
             </section>
         </form>
+        <section id="book_box">
+            <img src="images/old_testament.webp" style="width:50px;height:75px;">
+            <img src="images/new_testament.webp" style="width:50px;height:75px;">
+            <img src="images/book_of_mormon.webp" style="width:50px;height:75px;">
+            <img src="images/doctrine_and_covenants.webp" style="width:50px;height:75px;">
+            <img src="images/pearl_of_great_price.webp" style="width:50px;height:75px;">
+        </section>
     </div>
 
     <div id="output"></div>
