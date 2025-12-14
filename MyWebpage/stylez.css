@@ -256,46 +256,59 @@ footer{
   justify-content: center;
   align-items: end;
 }
+/*
 #Prophet p, #Apostle p, #Flags p, #Positioning p, #Devo p, #Holiday p,#Gallery p, #Form p{
   
 }
+*/
 
 /*<client_report.html>*/
-#clientreport, #juniordeveloperreport{
-  background-color: var(--c5);
+#clientreport, #leaddeveloperreport, #juniordeveloperreport, #generalexperienceandreflections{
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  
+}
+#clientreport, #juniordeveloperreport{
+  background-color: var(--c5);
 }
 #leaddeveloperreport, #generalexperienceandreflections{
   background-color: var(--c4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
-.report {
-  width: 65%;
-  height: 90%;
+
+.report_box {
+  width: 70%;
+  margin: 2%;
   background-color: var(--c3);
-  
+}
+.heading, .questions{
+  width: 80%;
+  justify-self: center;
 }
 .heading{
-  justify-self: center;
+  margin-top: 1.25%;
 }
 .questions{
-  justify-self: center;
+  margin-bottom: 3%;
 }
-/*
-.report h2{
-  justify-self: center;
-}
-.report h3{
+
+.heading h2, .heading h3, .heading p{
   justify-self: center;
   flex-wrap: wrap;
 }
-.report p{
-  justify-self: center;
+.heading h2{
+  margin: 1% 0% 0% 0%;/*U R D L*/
 }
-*/
+.heading h3, .heading a{
+  margin: .5% 0% 1% 0%;/*U R D L*/
+}
+.heading p{
+  margin: .25% 0% .25% 0%;/*U R D L*/
+}
+.questions h4{
+  margin: 2% 0% .5% 0%;/*U R D L*/
+}
+.questions p{
+  margin: .5% 0% 2% 2%;/*U R D L*/
+}
