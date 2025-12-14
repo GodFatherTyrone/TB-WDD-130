@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="author" content="Ty Budvarson">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/mystyles.css">
-    <title>Ty Budvarson Web Fundimentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MyWebpage/stylez.css">
+    <title>Ty Budvarson | Data Science Major | BYUI</title>
 </head>
-<body>
-    
-    <div id="wrapper">
-        <header>
-            <img src="images/birdlogo.png">
-            <h1>Ty Budvarson Web Fundimentals</h1>
-            
-    
-        </header>
-        <nav>
-            <a hrev="#">About me</a>
-            <a hrev="#">wwr</a>
-            <a hrev="#">Ice</a>
-            <a hrev="#">Project</a>
+<Body class="content">
+    <header>
+        <!--| |-->
+        <!--| Example
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+        </a>
+        |-->
+        <div class="title_box">
+            <p>Ty Budvarson | Data Science Major | BYUI</p>
+        </div>
+        <nav class="navbar"> 
+            <a class="active" href="MyWebpage/index.html">Home</a>
+            <a href="MyWebpage/ice.html">Ice Challenges</a>
+            <a href="MyWebpage/sellableskills.html">Skills</a>
+            <!--| Maybe when the user hovers, Display skills, when click on specific skill auto scroll to place that talks about it.|-->
+            <a href="MyWebpage/experience.html">Experience</a>
+            <!--| Same as skills |-->
         </nav>
-        <main>
-            <section>WWR</section>
-            <section>ICE</section>
-            <section>PROJECT</section>
-            <section>ABOUT ME</section>
-            <section id="ads">
-                <form>
-                    <label for="First Name">First Name</label>
-                    <input type="text" name="first_name" required>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright 2025 &copy;</p>
-        </footer>    
-    </div>
-</body>
-
+        <div class="icon_box">
+            <a href="https://github.com/GodFatherTyrone" target="_blank">
+                <img src="MyWebpage/images/icon/github_icon.png" alt="GitHub icon">
+            </a>
+            <a href="https://www.linkedin.com/in/tybudvarson/" target="_blank">
+                <img src="MyWebpage/images/icon/linkedin_icon.png" alt="LinkedIn icon">
+            </a>
+            <a href="https://email.com" target="_blank">
+                <img src="MyWebpage/images/icon/email_icon.png" alt="email icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="ribbon" id="toprow">
+            <div class="big_text_box">
+                <p id="introduction">
+                    ##@@ My name is Ty Budvarson I am a Data Sience tudent. I Have expirense in RStudio and MySQL. I also have limited experience in Python, C#, HTML, and CSS. @@##
+                </p>
+            </div>
+            <div id="portrait_box">
+                <a id="portrait" ><!--| id: # One |Class: . Multiple |-->
+                    <img src="MyWebpage/images/portrait/Balboa_Park_Headshots_165.jpeg" alt="Picture of me.">
+                </a>
+            </div>
+        </section>
+        <section class="ribbon" id="fav_projects">
+            <div id="fav_proj_box1" class="fav_proj_box">
+                <p class="fav_proj_summary">
+                    ##@@ This is where I talk about the first project i want to show @@##
+                </p>
+                <a class="fav_proj_img">
+                    <img src="MyWebpage/##@@ images/pro1.png @@##" alt="This is supposed to be a picture of my first project. Please ignore this message.">
+                </a>
+            </div>
+            <div id="fav_proj_box2" class="fav_proj_box">
+                <p class="fav_proj_summary">
+                    ##@@ This is where I talk about the second project i want to show @@##
+                </p>
+                <a class="fav_proj_img">
+                    <img src="MyWebpage/##@@ images/pro2.png @@##" alt="This is supposed to be a picture of my second project. Please ignore this message.">
+                </a>
+            </div>
+            <div id="fav_proj_box3" class="fav_proj_box">
+                <p class="fav_proj_summary">
+                    ##@@ This is where I talk about the third project i want to show @@##
+                </p>
+                <a class="fav_proj_img">
+                    <img src="MyWebpage/##@@ images/pro3.png @@##" alt="This is supposed to be a picture of my third project. Please ignore this message.">
+                </a>
+            </div><!--| End of section, id="fav_projects" |-->
+        </section>
+    </main>
+    <footer>
+        <p>Portfolio &copy; 2025 - Ty Budvarson</p>
+        <div class="icon_box">
+            <a href="https://github.com/GodFatherTyrone" target="_blank">
+                <img src="MyWebpage/images/icon/github_icon.png" alt="GitHub icon">
+            </a>
+            <a href="https://www.linkedin.com/in/tybudvarson/" target="_blank">
+                <img src="MyWebpage/images/icon/linkedin_icon.png" alt="LinkedIn icon">
+            </a>
+            <a href="https://email.com" target="_blank">
+                <img src="MyWebpage/images/icon/email_icon.png" alt="email icon">
+            </a>
+        </div>
+    </footer>
+</Body>
 </html>
