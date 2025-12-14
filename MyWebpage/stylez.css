@@ -260,4 +260,42 @@ footer{
   
 }
 
-
+/*<client_report.html>*/
+#clientreport, #juniordeveloperreport{
+  background-color: var(--c5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#leaddeveloperreport, #generalexperienceandreflections{
+  background-color: var(--c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.report {
+  width: 65%;
+  height: 90%;
+  background-color: var(--c3);
+  
+}
+.heading{
+  justify-self: center;
+}
+.questions{
+  justify-self: center;
+}
+/*
+.report h2{
+  justify-self: center;
+}
+.report h3{
+  justify-self: center;
+  flex-wrap: wrap;
+}
+.report p{
+  justify-self: center;
+}
+*/
